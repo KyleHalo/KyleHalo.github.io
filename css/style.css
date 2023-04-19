@@ -10,9 +10,16 @@ body {
     max-width: 100%;
     max-height: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
-    background-color: #e5e5e5;
+    background-color: black;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+  
 
 model-viewer {
     height: 100%;
@@ -50,7 +57,7 @@ model-viewer {
 
 .main_screen_holder {
     height: 100vh;
-    background-color: #b4d9ef;
+    background-color: black;
 }
 
 .small_txt {
@@ -371,9 +378,7 @@ model-viewer {
     display: none;
 }
     
-#nav_bot_holder {
-    //display: none;
-}
+
 
 .line_through {
     text-decoration: line-through;
@@ -600,7 +605,6 @@ a {
 .project_title_sub {
     line-height: 1;
     padding-bottom: 10px;
-    //color: grey;
 }
 
 .edu_title {
@@ -743,6 +747,83 @@ button {
     height: 18px;
     padding-right: 10px;
 }
+
+
+
+
+
+
+.span{
+    height: 20%;
+    width: 100%;
+    background-image: url("/images/gradient.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.span:hover{
+    transform: scale(0.95);
+    transition: 400ms;
+}
+
+
+.content{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.span_lbl{
+    color: white;
+}
+
+.span_icon{
+    height: 60px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.span_icon_arrow{
+    height: 35px;
+    padding-right: 20px;
+    padding-left: 10px;
+    margin-left: auto;
+}
+
+
+.relative_content{
+    position: relative;
+}
+
+.absolute_arrow{
+    width: 100%;
+    
+    z-index: 10;
+    text-align: center;
+    position: fixed; 
+    bottom:0%;
+}
+
+.absolute_content{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.scroll_arrow{
+    height: 50px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 1300px) {
@@ -900,5 +981,18 @@ button {
     
     .hide_mobile {
         display: none;
+    }
+
+    .span_lbl{
+        font-size: 20px;
+    }
+
+    
+    .span_icon{
+        height: 40px;
+    }
+
+    .span_icon_arrow{
+        height: 25px;
     }
 }
