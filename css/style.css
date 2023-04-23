@@ -763,8 +763,9 @@ button {
 }
 
 .span:hover{
-    transform: scale(0.95);
+    transform: translate(-100px);
     transition: 400ms;
+    cursor: pointer;
 }
 
 
